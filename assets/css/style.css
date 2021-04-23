@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Crimson Text', serif;
+}
+body {
+    background-color: #ff5722;
+}
+a {
+    text-decoration: none;
+    outline: none;
+}
+.animacija{
+    transition: all .3s ease-in-out;
+}
+ul{
+    list-style-type:none
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.relative {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    right: 0;
+    left: 0;
+}
+article, footer, header, nav, section {
+    display: block;
+}
+.half-width {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.third-width {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+header {
+    background: #303841;
+    padding: 23px 0px;
+    border-bottom: #00adb4 solid 25px;
+}
+.content-wrapper {
+    width: 70%;
+    margin: 0 15%;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.logo, header ul li {
+    display: inline-block;
+}
+.logo {
+    flex: 0 0 20%;
+    max-width: 20%;
+    position: relative;
+    animation-name: pomeranje;
+    animation-duration: 4s;
+}
+nav {
+    flex: 0 0 80%;
+    max-width: 80%;
+    align-self: center;
+    text-align: center;
+}
+header ul li a {
+    padding: 7px 10px;
+    line-height: 20px;
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 500;
+    color: #eee;
+    text-transform: uppercase;
+    margin: 0px auto;
+}
+header li:hover a, header li:focus a {
+    color: #00adb5;
+}
+header ul li i {
+    margin-right: 10px;
+}
+nav li.active a {
+    color: #00adb5;
+    background: #303841;
+    text-transform: uppercase;
+}
+.banner-main {
+    position: relative;
+}
+.banner-main .text-bg h1 {
+    color: #fff;
+    font-size: 70px;
+    line-height: 90px;
+    font-weight: bold;
+}
+.banner-main .text-bg p {
+    font-size: 25px;
+    padding: 0 0px 40px 0px;
+    color: #fff;
+}
+.grey {
+    background-color: rgba(0, 0, 0, 0.3);
+ 
+}
+.blue{
+    background-color: #00adb5;
+    padding: 0 20px; 
+}
+.about_us_section .half-width h2 {
+    margin: 20px 10px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+.about_us_section .half-width p {
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    
+}
+.about_us_section .bgd-img {
+    background-image: url('../img/tim.jpg');
+    background-size: cover;
+    height: 400px;
+    width: auto;
+    position: relative;
+}
+.about_us_section .bgd-img.leva {
+    background-image: url('../img/rokovnik.jpg');
+    margin-bottom: 7px;
+}
+.obavestenja{
+    background-color: #eee;
+    margin:15px;
+    padding: 15px;
+    border-radius: 5px;
+}
+.hero-box {
+    padding: 90px 0px;
+    background: #eee;
+    background-image: url('../img/pattern.jpg');
+    background-size: cover;
+    animation: slide 30s linear infinite;
+}
+@keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}
+.hero-box .content-wrapper h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.third-width{
+    text-align: center;
+}
+.third-width p {
+    padding: 20px;
+}
+.three-box i{
+    font-size: 80px;
+    color: #00adb4;
+}
+.contact_section{
+    margin: 20px;
+}
+.contact_section form {
+    width: 400px;
+    margin: 0px auto;
+}
+.contact_section form input[type=text], .contact_section form input[type=email], .contact_section form input[type=tel], .contact_section form textarea {
+    width: 100%;
+    padding: 15px 20px;
+    margin: 10px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.contact_section form input[type=submit] {
+    width: 100%;
+    background-color: #ff5722;
+    color: #fff;
+    padding: 15px 20px;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.contact_section form input[type=submit]:hover {
+    background-color: rgb(255, 51, 0);
+}  
+#kontakt-form {
+    border-radius: 5px;
+    background-color: #eee;
+    padding: 20px;
+}
+.map {
+    margin: 20px 0;
+ 
+}
+.gallery-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.gallery-box .content-wrapper h1 {
+    color: #fff;
+    display: block;
+}
+.gallery {
+    display: flex;
+    height: 70vh;
+    width: 90vw;
+}
+.item {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 0.8s ease;
+}
+.item:hover {
+    flex: 100%;
+}
+.item1 {
+    background-image: url("../img/knjige.jpeg");
+}
+.item2 {
+    background-image: url("../img/biljke.jpeg");
+}
+.item3 {
+    background-image: url("../img/cosak.jpeg");
+}
+.item4 {
+    background-image: url("../img/stampac.jpeg");
+}
+.item5 {
+    background-image: url("../img/pult.jpeg");
+}
+.table-wrapper{
+    background-color: #eee;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+.content-wrapper .naslov, .content-wrapper .napomena{
+    text-align: center;
+    color: #fff;
+    margin:20px;
+}
+.content-wrapper .napomena h1, .content-wrapper .napomena a{
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #eee;
+    text-decoration: underline;
+}
+.autor_section{
+    padding: 100px 0px;
+}
+.content-wrapper-flex {
+    width: 40%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    color: #eee;
+}
+.half-width figure img{
+    height: 400px;
+}
+.socialmedia a{
+    color: #fff;
+    font-size: 25px;
+}
+footer {
+    margin-top: 100px;
+    text-align: center;
+    color: #fff;
+    background-color: #303841;
+}
