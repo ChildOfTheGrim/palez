@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+
+<channel>
+  <title>Knjigovodstvena agencija</title>
+  <link>https://palez.000webhostapp.com</link>
+  <description>Rss za sajt</description>
+  <item>
+    <title>Covid-19</title>
+    <link>https://palez.000webhostapp.com/pages/obavestenja.html</link>
+    <description>Uspešno ste se prijavili na naš RSS feed</description>
+  </item>
+  <item>
+    <title> Neradni dan</title>
+    <link>https://palez.000webhostapp.com/pages/obavestenja.html</link>
+    <description>Obaveštenje o neradnim sredama</description>
+  </item>
+  <item>
+    <title>Izmene u zakonu</title>
+    <link>https://palez.000webhostapp.com/pages/obavestenja.html</link>
+    <description>Nove izmene u zakonu su doprinele do menjanja nacina vodjenja knjiga </description>
+  </item>
+</channel>
+
+</rss>
